@@ -1,0 +1,280 @@
+* {
+   /* Start https://www.cursors-4u.com */ 
+    cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1056.cur), auto !important; 
+    /* End https://www.cursors-4u.com */
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+    background-color: #ffffff;
+    font-family: Verdana, monospace;
+    margin: 0;
+    padding: 0;
+}
+/* Make logo and nav-links line up horizontally */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; 
+}
+/* Top nav links styling */
+#nav-links {
+  display: flex;
+  gap: 24px; /* creates equal spacing */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Reset link style */
+.top-nav a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-nav ul { 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 0; 
+  margin: 0; 
+  list-style: none; }
+/* removes link line */ 
+.top-nav a, 
+.bottom-nav a, 
+.project-links a { 
+  text-decoration: none; 
+  }
+/*Add some spacing under icons */
+.nav-label {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+#logo img {
+  height: 80px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  #logo img {
+    height: 24px; /* or smaller if you want */
+  }
+}
+/* art, nails, yt etc */
+.main-section {
+    border: 2px solid #bbb;      
+    border-radius: 16px;     
+    margin: 32px auto;         
+    padding: 24px;          
+    background: #fff;            
+    max-width: 100%;           
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07); 
+}
+.music-player {
+  font-size: 10px; 
+  color: #cccccc;
+  line-break: loose;
+  word-break: normal;overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: Verdana, monospace;
+  font-weight: 100;
+}
+/* responsive yt and soundcloud containers */
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.slideshow-container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .slideshow-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slideshow-container {
+    max-width: 960px;
+  }
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.text, .numbertext {
+    font-size: clamp(12px, 2vw, 18px);
+}
+/* Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: clamp(18px, 3vw, 30px);
+    color: #333;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Dots */
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #ffc7fd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.dot:hover {
+    background-color: #ff8afd;
+}
+/* coding*/
+#project-container {
+  display: flex;
+  justify-content: center; 
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;          
+}
+.project-description {
+  flex: 1 1 300px;
+  min-width: 250px;
+  text-align: center;
+  padding: 0 16px;
+}
+.project-description h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+.project-description p {
+  text-align: center;
+  margin: 0;
+}
+.project-links {
+  flex: 0 1 250px;
+  max-width: 100%;
+}
+.project-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-links li {
+  margin-bottom: 12px;
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  #project-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #project-description {
+    text-align: center;
+    padding: 0 16px;
+  }
+  .project-links {
+    width: 100%;
+  }
+}
+/* bio */
+#bio {
+  display: flex;
+  flex-wrap: nowrap; /* keep items side by side on desktop */
+  justify-content: flex-start; /* align items close */
+  align-items: center;
+  gap: 32px; /* space between image and text */
+  max-width: 900px;
+  margin: 0 auto; /* center the whole bio container */
+  padding: 24px;
+}
+.bio-photo {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0; /* prevent image shrinking */
+}
+/* to fit laptop */
+#bio-text {
+  flex: 1 1 auto;
+  min-width: 0; /* important to allow shrinking */
+  text-align: center;
+  padding: 0 10px;
+}
+#bio-text h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#bio-text p {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+/* to fit mobile layout */
+@media (max-width: 600px) {
+  #bio {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+  .bio-photo {
+    width: 70% !important;
+}
+  #bio-text {
+    text-align: center !important;
+    padding: 0 10px !important;
+}
+  #bio-text h2 {
+    text-align: center !important;
+  }
+}
+ /* Footer */
+  footer { 
+    color: black;  
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+  footer p {
+    margin: 0;
+}
