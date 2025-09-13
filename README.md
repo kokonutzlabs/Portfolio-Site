@@ -4,8 +4,8 @@ This is a personal HTML/CSS project I created after about a year of learning. As
 - HTML
 - CSS
 - Javascript
-# Live-Link
-[portfolio](https://fuzzykokonutz.neocities.org/)
+# Live Demo 
+[portfolio](kokonutzlabs.github.io)
 
 
 
