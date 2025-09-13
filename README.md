@@ -5,7 +5,7 @@ This is a personal HTML/CSS project I created after about a year of learning. As
 - CSS
 - Javascript
 # Live Demo 
-[portfolio](kokonutzlabs.github.io)
+
 
 
 
